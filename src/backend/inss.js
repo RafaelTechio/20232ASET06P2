@@ -14,7 +14,7 @@ module.exports = {
     },
 
     calcularDescontoFaixa: function (faixa) {
-       
+        return (faixa.fimFaixa - faixa.inicioFaixa) * faixa.aliquota;
     },
 
     calcularDescontoResidual: function (salarioBruto, faixaAnterior, faixaAtual) {

@@ -17,6 +17,7 @@ describe('[Encontrar aliquota IRRF]', () => {
 
 
 describe('[Calcular desconto IRRF]', () => {
-   
-    
+   it('deve retornar 45.80 para o salário base de 2722.61', () => {
+    expect(irrf.calculardesconto(2722.61)).toEqual(45.80);
+   })
 });
